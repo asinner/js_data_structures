@@ -1,7 +1,45 @@
 # README
 This library contains a number of classic data structures implemented in JavaScript.
 
-## Doubly Linked List
+### Binary Search Tree
+The Binary Search Tree library is composed of three classes:
+
+- Binary Search Tree
+- Node
+- Queue
+
+BinarySearchTree API usage:
+
+- **new()**
+	Creates a new `BinarySearchTree` object
+
+- **insert(node, current)**
+	Inserts a new `Node` into the `BinarySearchTree` object. Uses recursion to insert the passed node.
+		**node** (required): must be an object returned from `new Node()`
+		**current** (required): the current node object to insert the `node` argument after. Defaults to the BinarySearchTree root node.
+
+- **contains(value)**
+	Returns true if the value is found within the BinarySearchTree. 
+		**value** (required): This method checks the value assigned to each node.
+	
+- **traverse(method, visit)**
+	Traverses the tree using the **method** specified and calls the **visit** function for each pass in the traversal.
+		**method** (required): The traversal method to use. Methods can 
+		**visit** (required): The visit function to call on each pass for the traversal method.
+		
+- **size()**
+	Returns the number of nodes in the BinarySearchTree
+
+- **depth(current)**
+	Returns the number of levels below the current BinarySearchTree node.
+	**current**: the current node to check the levels below. Pass in the root to start from the top.
+
+- **balance(current)**
+	Returns the number of levels below the current BinarySearchTree node.
+	**current**: the current node to check the levels below. Pass in the root to start from the top.
+		
+
+### Doubly Linked List
 Example usage:
 
 ### Requiring the files
