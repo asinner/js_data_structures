@@ -53,7 +53,6 @@ function itShouldBeDoublyLinked() {
 	list.insert(n2);
 	list.head.nextNode.previousNode === list.head ? report(msg, true) : report(msg, false);
 }
-
 function report(msg, passed) {
 	if (passed) {
 		console.log(msg.green);
